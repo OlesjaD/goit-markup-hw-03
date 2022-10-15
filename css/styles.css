@@ -9,6 +9,12 @@
     --title-text-color: #212121;
     --accent-color: #2196F3;
 }
+/*html{
+    box-sizing: border-box;
+}
+*,*::before, *::after{
+    box-sizing: inherit;
+}*/
 body{
     background-color: #FFFFFF;
     font-family: 'Roboto', sans-serif;
@@ -25,6 +31,18 @@ body a{
     /*Header*/
 header {
     background-color: #FFFFFF;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+h1,h2,h3,p,ul{
+    margin: 0;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding: 0 15px;
+    outline: 4px red;                       /*!!!!!!!!!!!!!!!!!!!!*/
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -77,21 +95,25 @@ header {
     /*Hero-sectiov*/
 .hero-section {
     background-color: #2F303A;
+    text-align: center;
+    outline: 4px red;                   /*!!!!!!!!!!!!!!!!!!!!*/
+    margin-bottom: 94px;
 }
 .hero-section .title {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
-    text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
+    margin-bottom: 30px;
 }
 .button{
     background: var(--accent-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     cursor: pointer;
+    margin-bottom: 200px;
 }
 .button__label {
     font-family: 'Roboto';
@@ -130,11 +152,15 @@ header {
     line-height: 1.71;
     color: var(--primary-text-color);
 }
+.benefits{
+    margin-bottom: 94px;
+}
 .title-work{
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
     color: var(--title-text-color);
+    margin-bottom: 50px;
 }
 .specialists .name{
     font-weight: 500;
@@ -142,22 +168,37 @@ header {
     line-height: 1.19;
     text-align: center;
     color: var(--title-text-color);
+    margin-bottom: 10px;
 }
 .specialists .profession{
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
     color: var(--primary-text-color);
+    margin-bottom: 30px;
+}
+.work{
+    margin-bottom: 94px;
 }
 .work1 {
+    padding-top: 94px;
+    padding-bottom: 94px;
     background-color: #F5F4FA;
+}
+.work1 .img{
+    margin-bottom: 30px;
 }
 .work1.link{
     background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
       /*Футер*/
 .footer{
     background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 215px;
 }
 .footer .logo-studio{
     font-family: 'Raleway', sans-serif;
@@ -176,6 +217,10 @@ header {
     font-style: normal;
     line-height: 1.71;
     color: #FFFFFF;
+    margin-bottom: 9px;
+}
+.footer .mail{
+    margin-bottom: 9px;
 }
 .footer .mail,
 .footer .tel{

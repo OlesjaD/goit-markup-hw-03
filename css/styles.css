@@ -28,21 +28,27 @@ body ul{
 body a{
     text-decoration: none;
 }
-    /*Header*/
+    
+            /*Header*/
 header {
     background-color: #FFFFFF;
     padding-top: 32px;
     padding-bottom: 32px;
+    border-bottom: 1px solid #ECECEC;
 }
 h1,h2,h3,p,ul{
     margin: 0;
+    padding: 0;
+}
+img{
+    display: block;
 }
 .container{
     margin-left: auto;
     margin-right: auto;
     width: 1200px;
     padding: 0 15px;
-    outline: 4px red;                       /*!!!!!!!!!!!!!!!!!!!!*/
+    outline: 4px solid red;                       /*!!!!!!!!!!!!!!!!!!!!*/
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -69,6 +75,8 @@ h1,h2,h3,p,ul{
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--title-text-color);
+    padding: 32px 0;
+    display: block;
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -96,7 +104,7 @@ h1,h2,h3,p,ul{
 .hero-section {
     background-color: #2F303A;
     text-align: center;
-    outline: 4px red;                   /*!!!!!!!!!!!!!!!!!!!!*/
+    outline: 4px solid red;                   /*!!!!!!!!!!!!!!!!!!!!*/
     margin-bottom: 94px;
 }
 .hero-section .title {
@@ -181,19 +189,21 @@ h1,h2,h3,p,ul{
     margin-bottom: 94px;
 }
 .work1 {
-    padding-top: 94px;
-    padding-bottom: 94px;
+    padding: 186px 94px 215px 215px;
     background-color: #F5F4FA;
 }
 .work1 .img{
     margin-bottom: 30px;
 }
-.work1.link{
-    background-color: #FFFFFF;
+.container1{
+    width: 270px;
+    height: 368px;
+    background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-      /*Футер*/
+    
+            /*Футер*/
 .footer{
     background-color: #2F303A;
     padding-top: 60px;
@@ -233,8 +243,13 @@ h1,h2,h3,p,ul{
 .footer .tel:hover,.footer .tel:focus{
     color: var(--accent-color);
 }
-         /*Портфоліо*/
-.filters .btn{
+       
+                /*Портфоліо*/
+.filters{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+                .filters .btn{
     font-family: 'Roboto';
     font-weight: 500;
     font-size: 16px;
@@ -262,4 +277,14 @@ h1,h2,h3,p,ul{
     font-size: 16px;
     line-height: 1.88;
     color: var(--primary-text-color);
+}
+.container2{
+    box-sizing: border-box;
+    width: 370px;
+    height: 404px;
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.menu{
+    padding: 20px 24px;
 }

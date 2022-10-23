@@ -28,6 +28,7 @@ body ul{
 body a{
     text-decoration: none;
 }
+
     
             /*Header*/
 header {
@@ -54,7 +55,7 @@ img{
     margin-right: auto;
     width: 1200px;
     padding: 0 15px;
-    outline: 4px solid red;                       /*!!!!!!!!!!!!!!!!!!!!*/
+    /*outline: 4px solid red;*/ 
 }
 .logo{
     font-family: 'Raleway', sans-serif;
@@ -62,6 +63,8 @@ img{
     font-size: 26px;
     line-height: 1.19;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.nav .logo{
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -128,7 +131,7 @@ img{
 .hero-section {
     background-color: #2F303A;
     text-align: center;
-    outline: 4px solid red;                   /*!!!!!!!!!!!!!!!!!!!!*/
+    /*outline: 4px solid red;*/
 }
 .hero-section .title {
     font-weight: 900;
@@ -175,12 +178,13 @@ img{
 .features{
     display: flex;
     flex-wrap: nowrap;
-    background-color: teal;
 }
 .features .item+.item{
     margin-left: 30px;
 }
-
+.benefits .item{
+    width: 270px;
+}
 .benefits .details {
     line-height: 1.14;
     font-size: 14px;
@@ -205,7 +209,10 @@ img{
 .box{
     display: flex;
 }
-
+.specialists{
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .specialists .name{
     font-weight: 500;
@@ -223,7 +230,15 @@ img{
     margin-bottom: 30px;
 }
 .work{
-    padding-bottom: 94px;
+    display: flex;                          !!!!!!!!!!!!!!!!!!!!!!!!
+}
+.box {
+    display: flex;                          !!!!!!!!!!!!!!!!!!!!!!!!
+    flex-wrap: wrap;
+}
+
+.work .item +.item{
+    margin-left: 30px;
 }
 .work1 {
     padding-top: 94px;
@@ -240,13 +255,17 @@ img{
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
-    
+.container1 +.container1{
+    margin-left: 30px;
+}
+   
+
+
             /*Футер*/
 .footer{
     background-color: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
 }
 .footer .logo-studio{
     font-family: 'Raleway', sans-serif;
@@ -256,6 +275,8 @@ img{
     color: #FFFFFF;
 }
 .footer .logo {
+    display: flex;
+    margin-bottom: 20px;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 26px;
@@ -282,6 +303,8 @@ img{
     color: var(--accent-color);
 }
        
+
+
                 /*Портфоліо*/
 .filters{
     padding-top: 94px;

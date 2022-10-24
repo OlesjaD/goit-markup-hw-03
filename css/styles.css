@@ -8,6 +8,7 @@
     --primary-text-color: #757575;
     --title-text-color: #212121;
     --accent-color: #2196F3;
+    --white-color: #FFFFFF;
 }
 html{
     box-sizing: border-box;
@@ -16,7 +17,7 @@ html{
     box-sizing: inherit;
 }
 body{
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -32,7 +33,7 @@ body a{
     
             /*Header*/
 header {
-    background-color: #FFFFFF;
+    background-color: var(--white-color);
     border-bottom: 1px solid #ECECEC;
 }
 h1,h2,h3,p,ul{
@@ -139,7 +140,7 @@ img{
     line-height: 1.36;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 30px;
 }
 .button{
@@ -157,7 +158,7 @@ img{
     align-items: center;
     text-align: center;
     letter-spacing: 0.06em;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 .button:hover, .button:focus{
     color: var(--accent-color);
@@ -177,7 +178,7 @@ img{
 }
 .features{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
 }
 .features .item+.item{
     margin-left: 30px;
@@ -230,10 +231,10 @@ img{
     margin-bottom: 30px;
 }
 .work{
-    display: flex;                          !!!!!!!!!!!!!!!!!!!!!!!!
+    display: flex; 
 }
 .box {
-    display: flex;                          !!!!!!!!!!!!!!!!!!!!!!!!
+    display: flex;
     flex-wrap: wrap;
 }
 
@@ -251,7 +252,7 @@ img{
 .container1{
     width: 270px;
     height: 368px;
-    background: #FFFFFF;
+    background: var(--white-color);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
@@ -272,7 +273,7 @@ img{
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    color: #FFFFFF;
+    color: var(--white-color);
 }
 .footer .logo {
     display: flex;
@@ -285,7 +286,7 @@ img{
 .footer .address{
     font-style: normal;
     line-height: 1.71;
-    color: #FFFFFF;
+    color: var(--white-color);
     margin-bottom: 9px;
 }
 .footer .mail{
@@ -334,7 +335,7 @@ img{
 }
 .filters .btn:hover,
 .filters .btn:focus{
-    color: #FFFFFF;
+    color: var(--white-color);
     background-color: var(--accent-color);
 }
 .portfolio .link{
@@ -361,7 +362,7 @@ img{
     margin-bottom: 30px;
     width: 370px;
     height: 404px;
-    background: #FFFFFF;
+    background: var(--white-color);
     border: 1px solid #EEEEEE;
 }
 .container2:nth-child(3n) {
